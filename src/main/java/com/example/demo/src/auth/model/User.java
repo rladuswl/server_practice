@@ -1,4 +1,4 @@
-package com.example.demo.src.user.model;
+package com.example.demo.src.auth.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,7 +11,6 @@ public class User {
     private int userIdx;
     private String name;
     private String nickName;
-    private String birth;
     private String email;
     private String pwd;
 }

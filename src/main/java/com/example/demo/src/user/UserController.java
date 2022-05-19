@@ -9,9 +9,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import static com.example.demo.config.BaseResponseStatus.POST_USERS_EMPTY_EMAIL;
-import static com.example.demo.config.BaseResponseStatus.POST_USERS_INVALID_EMAIL;
-import static com.example.demo.utils.ValidationRegex.isRegexEmail;
+import static com.example.demo.config.BaseResponseStatus.*;
+import static com.example.demo.utils.ValidationRegex.*;
 
 @RestController
 @RequestMapping("/users")
@@ -71,10 +70,33 @@ public class UserController {
         if(postUserReq.getEmail() == null){
             return new BaseResponse<>(POST_USERS_EMPTY_EMAIL);
         }
-        // 이메일 정규표현
+        if(postUserReq.getPassword() == null){
+            return new BaseResponse<>(POST_USERS_EMPTY_PASSWORD);
+        }
+        if(postUserReq.getName() == null){
+            return new BaseResponse<>(POST_USERS_EMPTY_NAME);
+        }
+
+        if(postUserReq.getBirth() == null){
+            return new BaseResponse<>(POST_USERS_EMPTY_BIRTHDAY);
+        }
+        if(postUserReq.getNickName() == null){
+            return new BaseResponse<>(POST_USERS_EMPTY_NICKNAME);
+        }
+
+        // 정규 표현
         if(!isRegexEmail(postUserReq.getEmail())){
             return new BaseResponse<>(POST_USERS_INVALID_EMAIL);
         }
+//        if(!isRegexPassword(postUserReq.getPassword())){
+//            return new BaseResponse<>(POST_USERS_INVALID_PASSWORD);
+//        }
+//        if(!isRegexName(postUserReq.getName())){
+//            return new BaseResponse<>(POST_USERS_INVALID_NAME);
+//        }
+//        if(!isRegexNickName(postUserReq.getNickName())){
+//            return new BaseResponse<>(POST_USERS_INVALID_NICKNAME);
+//        }
         try{
             PostUserRes postUserRes = userService.createUser(postUserReq);
             return new BaseResponse<>(postUserRes);
