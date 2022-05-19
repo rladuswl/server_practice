@@ -1,0 +1,45 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.2)
+
+17:19:14.988 INFO  [File:RepositoryConfigurationDelegate.java] [Func:registerRepositoriesIn] [Line:128] [Message:Bootstrapping Spring Data JPA repositories in DEFAULT mode.]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:19:15.039 INFO  [File:RepositoryConfigurationDelegate.java] [Func:registerRepositoriesIn] [Line:188] [Message:Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.]- Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
+17:19:16.606 INFO  [File:TomcatWebServer.java] [Func:initialize] [Line:108] [Message:Tomcat initialized with port(s): 9000 (http)]- Tomcat initialized with port(s): 9000 (http)
+17:19:16.634 INFO  [File:DirectJDKLog.java] [Func:log] [Line:173] [Message:Initializing ProtocolHandler ["http-nio-9000"]]- Initializing ProtocolHandler ["http-nio-9000"]
+17:19:16.636 INFO  [File:DirectJDKLog.java] [Func:log] [Line:173] [Message:Starting service [Tomcat]]- Starting service [Tomcat]
+17:19:16.636 INFO  [File:DirectJDKLog.java] [Func:log] [Line:173] [Message:Starting Servlet engine: [Apache Tomcat/9.0.41]]- Starting Servlet engine: [Apache Tomcat/9.0.41]
+17:19:16.779 INFO  [File:DirectJDKLog.java] [Func:log] [Line:173] [Message:Initializing Spring embedded WebApplicationContext]- Initializing Spring embedded WebApplicationContext
+17:19:16.780 INFO  [File:ServletWebServerApplicationContext.java] [Func:prepareWebApplicationContext] [Line:289] [Message:Root WebApplicationContext: initialization completed in 3765 ms]- Root WebApplicationContext: initialization completed in 3765 ms
+17:19:17.776 INFO  [File:HikariDataSource.java] [Func:getConnection] [Line:110] [Message:HikariPool-1 - Starting...]- HikariPool-1 - Starting...
+17:19:18.711 INFO  [File:HikariDataSource.java] [Func:getConnection] [Line:123] [Message:HikariPool-1 - Start completed.]- HikariPool-1 - Start completed.
+17:19:18.885 INFO  [File:LogHelper.java] [Func:logPersistenceUnitInformation] [Line:31] [Message:HHH000204: Processing PersistenceUnitInfo [name: default]]- HHH000204: Processing PersistenceUnitInfo [name: default]
+17:19:19.145 INFO  [File:Version.java] [Func:logVersion] [Line:44] [Message:HHH000412: Hibernate ORM core version 5.4.27.Final]- HHH000412: Hibernate ORM core version 5.4.27.Final
+17:19:19.694 INFO  [File:JavaReflectionManager.java] [Func:<clinit>] [Line:56] [Message:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+17:19:20.024 INFO  [File:Dialect.java] [Func:<init>] [Line:175] [Message:HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect]- HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+17:19:20.527 INFO  [File:JtaPlatformInitiator.java] [Func:initiateService] [Line:52] [Message:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:19:20.555 INFO  [File:AbstractEntityManagerFactoryBean.java] [Func:buildNativeEntityManagerFactory] [Line:437] [Message:Initialized JPA EntityManagerFactory for persistence unit 'default']- Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:19:20.710 WARN  [File:JpaBaseConfiguration.java] [Func:openEntityManagerInViewInterceptor] [Line:221] [Message:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:19:20.984 INFO  [File:UserDetailsServiceAutoConfiguration.java] [Func:getOrDeducePassword] [Line:86] [Message:
+
+Using generated security password: 4b2805e0-565e-4080-9abf-3bacb73a48fe
+]- 
+
+Using generated security password: 4b2805e0-565e-4080-9abf-3bacb73a48fe
+
+17:19:21.197 INFO  [File:DefaultSecurityFilterChain.java] [Func:<init>] [Line:51] [Message:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35cd68d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@222afc67, org.springframework.security.web.header.HeaderWriterFilter@38fc5554, org.springframework.security.web.authentication.logout.LogoutFilter@7d199c68, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54f4a7f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5477a1ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@316a598d, org.springframework.security.web.session.SessionManagementFilter@1de0a46c, org.springframework.security.web.access.ExceptionTranslationFilter@3eabe84a]]- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35cd68d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@222afc67, org.springframework.security.web.header.HeaderWriterFilter@38fc5554, org.springframework.security.web.authentication.logout.LogoutFilter@7d199c68, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54f4a7f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5477a1ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@316a598d, org.springframework.security.web.session.SessionManagementFilter@1de0a46c, org.springframework.security.web.access.ExceptionTranslationFilter@3eabe84a]
+17:19:21.532 INFO  [File:ExecutorConfigurationSupport.java] [Func:initialize] [Line:181] [Message:Initializing ExecutorService 'applicationTaskExecutor']- Initializing ExecutorService 'applicationTaskExecutor'
+17:19:22.037 INFO  [File:DirectJDKLog.java] [Func:log] [Line:173] [Message:Starting ProtocolHandler ["http-nio-9000"]]- Starting ProtocolHandler ["http-nio-9000"]
+17:19:22.098 INFO  [File:TomcatWebServer.java] [Func:start] [Line:220] [Message:Tomcat started on port(s): 9000 (http) with context path '']- Tomcat started on port(s): 9000 (http) with context path ''
+HEAP Size(M) : 34 MB
+17:19:32.109 INFO  [File:DirectJDKLog.java] [Func:log] [Line:173] [Message:Initializing Spring DispatcherServlet 'dispatcherServlet']- Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:19:32.110 INFO  [File:FrameworkServlet.java] [Func:initServletBean] [Line:525] [Message:Initializing Servlet 'dispatcherServlet']- Initializing Servlet 'dispatcherServlet'
+17:19:32.112 INFO  [File:FrameworkServlet.java] [Func:initServletBean] [Line:547] [Message:Completed initialization in 2 ms]- Completed initialization in 2 ms
+18:15:37.046 INFO  [File:ExecutorConfigurationSupport.java] [Func:shutdown] [Line:218] [Message:Shutting down ExecutorService 'applicationTaskExecutor']- Shutting down ExecutorService 'applicationTaskExecutor'
+18:15:37.047 INFO  [File:AbstractEntityManagerFactoryBean.java] [Func:destroy] [Line:651] [Message:Closing JPA EntityManagerFactory for persistence unit 'default']- Closing JPA EntityManagerFactory for persistence unit 'default'
+18:15:37.052 INFO  [File:HikariDataSource.java] [Func:close] [Line:350] [Message:HikariPool-1 - Shutdown initiated...]- HikariPool-1 - Shutdown initiated...
+18:15:37.072 INFO  [File:HikariDataSource.java] [Func:close] [Line:352] [Message:HikariPool-1 - Shutdown completed.]- HikariPool-1 - Shutdown completed.

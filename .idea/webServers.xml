@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="dcbe2d59-1d2c-4ea0-b598-2b7d7d7fb40a" name="umcPracticeServer">
+        <fileTransfer accessType="SFTP" host="3.34.231.171" port="22" sshConfigId="20e20c39-9686-4847-8b7a-8e83bb9fa7d1" sshConfig="ubuntu@3.34.231.171:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" isUseRsync="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
